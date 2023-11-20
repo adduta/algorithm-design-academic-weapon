@@ -1,17 +1,17 @@
-package greedy;
+package greedy.graph;
 
-import greedy.GettingOutTheFastest;
+import greedy.graph.Edge;
 
 import java.util.ArrayList;
 import java.util.List;
 
-class Node {
+public class Node {
 
-    List<Edge> outgoingEdges;
+    public List<Edge> outgoingEdges;
 
-    int id;
+    public int id;
 
-    boolean marked;
+    public boolean marked;
 
     public Node(int id) {
         this.outgoingEdges = new ArrayList<>();

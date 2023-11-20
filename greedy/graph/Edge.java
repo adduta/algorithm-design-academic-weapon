@@ -1,10 +1,10 @@
-package greedy;
+package greedy.graph;
 
 import java.util.Objects;
 
-class Edge {
+public class Edge {
 
-    int from, to, weight;
+    public int from, to, weight;
 
     public Edge(int from, int to, int weight) {
         this.from = from;
