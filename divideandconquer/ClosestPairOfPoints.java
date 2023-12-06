@@ -16,9 +16,9 @@ public class ClosestPairOfPoints {
      * @return smallest pair-wise distance between points.
      */
     public static double closestPair(List<Point> points) {
-        if (points.size() < 2) return Integer.MAX_VALUE;
+        if (points.size() <= 1) return Double.POSITIVE_INFINITY;
 
-        if (points.size() == 2) return Util.distance(points.get(0), points.get(1));
+        if (points.size() <= 3) return Util.bruteForce(points);
 
         // Find L, the median of the X axis.
         double L = 0.0;
